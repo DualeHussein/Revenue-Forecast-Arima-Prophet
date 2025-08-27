@@ -1,49 +1,36 @@
-# History files
+# --- R / RStudio ---
 .Rhistory
 .Rapp.history
-
-# Session Data files
 .RData
-.RDataTmp
-
-# User-specific files
 .Ruserdata
-
-# Example code in package build process
-*-Ex.R
-
-# Output files from R CMD build
-/*.tar.gz
-
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
 .Rproj.user/
-
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-# R Environment Variables
+*.Rproj
 .Renviron
+.Rprofile
 
-# pkgdown site
-docs/
+# --- renv / packrat (if you use them) ---
+renv/library/
+renv/staging/
+packrat/
+packrat/lib*/
+packrat/src/
+!renv.lock        # keep the lockfile under version control
 
-# translation temp files
-po/*~
+# --- OS / editor junk ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
 
-# RStudio Connect folder
-rsconnect/
+# --- Python crumbs (if you ever run helpers) ---
+__pycache__/
+*.pyc
+
+# --- Project artifacts ---
+reports/*         # ignore generated charts/metrics
+!reports/.gitkeep # keep the empty folder
+
+# --- Data ---
+data/raw/**
+data/intermediate/**
+!data/revenue_weekly.csv   # keep your small sample dataset
